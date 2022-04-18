@@ -3,7 +3,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![](https://github.com/Audamon/heroes/blob/main/src/assets/heroes.gif)
 
 ## git clone
-To clone the repository `git clone `
+To clone the repository `git clone https://github.com/Audamon/heroes`
 
 ## npm install
 Install project dependencies;
