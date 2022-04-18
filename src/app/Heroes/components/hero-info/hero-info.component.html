@@ -1,0 +1,44 @@
+<div class="card position-relative">
+    <button class="position-absolute top-0 start-0 btn btn-outline-dark mb-2 mt-2 ms-2" (click)="goBack()">Back</button>
+    <div class="card-content d-flex justify-content-center mt-2">
+        <img src={{heroInfo.image.url}} alt="{{heroInfo.name}}" class="rounded" style="width:100px"/>
+    </div>
+    <div class="card-content d-flex justify-content-center mt-2">
+        <h3>Infos:</h3>
+    </div>
+    <div>
+        <ul>
+         <li> <h6>Name: {{heroInfo.name}}</h6></li>
+         <li>
+             <h6>Appearance:</h6>  
+             <ul>
+             <li><h6>Sex: {{heroInfo.appearance.gender}}</h6></li>
+             <li><h6>Race: {{heroInfo.appearance.race}}</h6></li>
+             <li><h6>Weight: {{heroInfo.appearance.weight[0]}}/{{heroInfo.appearance.weight[1]}}</h6></li>
+             <li><h6>Height: {{heroInfo.appearance.height[0]}}/{{heroInfo.appearance.height[1]}}</h6></li>
+             <li><h6>Hair color: {{heroInfo.appearance["hair-color"]}}</h6></li>
+             <li><h6>Eye color: {{heroInfo.appearance["eye-color"]}}</h6></li>
+         </ul></li>
+         <li> 
+            <h6>Connections: </h6>
+             <ul>
+            
+            <li><h6>Groups: {{heroInfo.connections["group-affiliation"]}}</h6></li>
+            <li><h6>Relatives: {{heroInfo.connections.relatives}}</h6></li>
+            
+        </ul></li>
+        <li>
+            <h6>Stats: </h6> 
+            <ul>
+            
+            <li><h6>Combat: {{heroInfo.powerstats.combat}}</h6></li>
+            <li><h6>Durability: {{heroInfo.powerstats.durability}}</h6></li>
+            <li><h6>Intelligence: {{heroInfo.powerstats.intelligence}}</h6></li>
+            <li><h6>Power: {{heroInfo.powerstats.power}}</h6></li>
+            <li><h6>Speed: {{heroInfo.powerstats.speed}}</h6></li>
+            <li><h6>Strength: {{heroInfo.powerstats.strength}}</h6></li>
+        </ul></li>
+         <li> <h6>Work: {{heroInfo.work.occupation}}</h6></li>
+    </ul>
+    </div>
+</div>

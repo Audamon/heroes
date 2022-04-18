@@ -1,0 +1,19 @@
+<div class="card ">
+    <div class=" mb-3 ">
+        <button class=" top-0 start-0 btn btn-outline-dark mb-2 mt-2 ms-2" (click)="goBack()">Back</button>
+    </div>
+    <ul class=" list-unstyled" *ngFor="let hero of heroesList.results"> 
+        <li class="pd-0  m-0 ">
+            <div class="card d-flex flex-row me-2 ms-2 " (click)="chooseHero(hero.id)">
+               
+                <img class="thumbnail me-2 " src={{hero.image.url}} alt="{{hero.name}}" style="width: 100px;"/>
+                <div>
+                    <h3>Name: {{hero.name}}</h3> 
+                    <h3>Real Name: {{hero.biography['full-name']}}</h3> 
+                    <h3>Publisher: {{hero.biography.publisher}}</h3> 
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+</div>
