@@ -6,7 +6,7 @@ import { Heroes, Hero } from '../models/heroes';
   providedIn: 'root'
 })
 export class HeroesService {
-  private readonly urlApi = '/api/5033128890082701/';
+  private readonly urlApi = 'https://superheroapi.com/api/5033128890082701/';
   private search: string = '';
   private id: number = 0;
   constructor(private http: HttpClient) { }
